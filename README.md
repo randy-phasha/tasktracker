@@ -18,9 +18,10 @@ Track work items
    - nuget - c#
    - maven - Java
    - pip3 - Python
- - MONOREPO concept
+ 
+> Important please learn more about **MONOREPO concept**
 
-## Data transfer schema files 
+## Data transfer schemas
     - JSON - JS object notation
     - BSON
     - SOAP
