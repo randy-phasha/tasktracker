@@ -29,7 +29,7 @@ Track work items
     - YAML / yml
     - TOML
 ## Learning resources 
-    - [Javascript](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
-    - [pnpm](https://pnpm.io)
-    - [typescript](https://www.typescriptlang.org/)
-    - [monorepo](https://monorepo.tools/)
+  - [Javascript](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+  - [pnpm](https://pnpm.io)
+  - [typescript](https://www.typescriptlang.org/)
+  - [monorepo](https://monorepo.tools/)
