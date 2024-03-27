@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ang": "pnpm --filter angular"
+    "ang": "pnpm --filter angular",
+    "api":"pnpm --filter api"
   },
   "keywords": [],
   "author": "",
