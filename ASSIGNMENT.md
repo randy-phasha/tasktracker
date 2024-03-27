@@ -19,7 +19,6 @@ Using the lessons learned and the backend application initialized in this projec
 4. **Opherlabs Employee List**: given all employees at OpherLabs, you are required to created an endpoint in the server that returns the following data
 
 ```js
-// Employee data
 {
     name: string
     department: string
