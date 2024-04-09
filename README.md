@@ -33,3 +33,20 @@ Track work items
   - [pnpm](https://pnpm.io)
   - [typescript](https://www.typescriptlang.org/)
   - [monorepo](https://monorepo.tools/)
+
+## Request Headers (an object of key value pairs: JSON )
+  - { key:value }
+  ```js
+  {
+    "Application-Type": "{application/{json|pdf|jpg|etc..}}",
+    "Authorization": "Bearer {Token}"
+  }
+
+  /** ASIGNMENT 
+  * please extend this header object
+  */
+  ```
+
+  
+
+
