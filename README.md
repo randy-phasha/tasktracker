@@ -47,6 +47,12 @@ Track work items
   */
   ```
 
+
+  ## Project file/folder naming convetions
+    - camelCase => myHouseStatsData
+    - PascalCase=> MyHouseStatsData
+    - snake_case =>my_house_stats_data
+
   
 
 
