@@ -36,3 +36,15 @@ Using the lessons learned and the backend application initialized in this projec
 # ‼️ IMPORTANT 🪤
 Please make sure that you learn on how to work on these tasks without using AI. mastering the skills is far more important than getting points for a job well done by AI ⛔️
 
+# Assignment 2
+
+Based on what wehave covered this week please work on the following
+
+1. Clean up teh main server file `index.js` to have all implementation in separate files
+2. Create endpoint routes which are clean and with no `inline ` implementations but using external functions to group all functionalities
+3. Add the following endpoints to `taskService`
+   a. Adding new tasks
+   b. deleteing tasks
+   c. getting all tasks
+
+>Please note that you will be graded based on the aproach you take to complete these tasks.
