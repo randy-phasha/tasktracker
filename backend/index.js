@@ -4,9 +4,10 @@ import dotenv from 'dotenv'
 import { StudentData } from './data/students.js';
 
 // bodyParse
+
+import { taskRouter } from './taskService'
 dotenv.config()
 const env = process.env
-// 1. REST API
 const app = express();
 const localDb = []
 app.use(express.json())
@@ -98,15 +99,13 @@ app.post("/postdata", (requestdata, responsedata) => {
     }
 })
 
-
 console.log(env.API_PORT)
+
+// GET, POST, PUT, PATCH, DELETE : HTTP methods
+// use
+app.use(taskRouter)
 
 /******************End of app initialization******************/
 app.listen(env.API_PORT ?? 6700, () => {
     console.log(`Server listening on port http://localhost:${env.API_PORT ?? 6700}`);
 })
-// GET, POST, PUT, PATCH, DELETE : HTTP methods
-// use
-
-
-// GraphqL API (POST) // uses only one endpoint
