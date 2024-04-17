@@ -2,7 +2,7 @@ import express from 'express';
 import { Datafile } from './data/dataFile.js';
 import dotenv from 'dotenv'
 import { StudentData } from './data/students.js';
-import { opherlabsEmployees } from './data/opherlabsEmployees.js';
+
 // bodyParse
 dotenv.config()
 const env = process.env
@@ -31,6 +31,7 @@ app.get("/names", (req, res) => {
 
 app.get("/data/:type", Datafile) // /data/employees, /data/students
 
+/*
 app.get("/students", (req, res) => {
     try {
         if (StudentData.length < 45) {
@@ -43,6 +44,7 @@ app.get("/students", (req, res) => {
         res.status(500).json("Unable to load students: " + error.message)
     }
 })
+*/
 
 app.get("/provinceCount", (req, res) => {
     //const provinces = [];
@@ -70,6 +72,7 @@ app.get("/provinceCount", (req, res) => {
     }
 });
 
+/*
 app.get('/opherlabsEmployee', (req, res) => {
     try {
         res.status(200).send(opherlabsEmployees);
@@ -77,12 +80,14 @@ app.get('/opherlabsEmployee', (req, res) => {
         res.status(500).json("Unable to get Opherlabs Employees: " + error.message)
     }
 })
+*/
 
 app.patch('/data', (a, b) => {
     const { body } = a
     console.log(body)
     return b.send({ fulName: body.firstName + " " + body.lastName, message: "Recived data", success: true })
 })
+
 app.post("/postdata", (requestdata, responsedata) => {
     const { body: bodyData } = requestdata
     try {
@@ -92,6 +97,8 @@ app.post("/postdata", (requestdata, responsedata) => {
         return responsedata.status(500).send({ message: "Data not Recived", success: false })
     }
 })
+
+
 console.log(env.API_PORT)
 
 /******************End of app initialization******************/

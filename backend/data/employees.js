@@ -3,9 +3,10 @@ const length = EmployeeData.length // 4
 // get the last item
 const latsInem = EmployeeData[length - 1] // "Clynton"
 EmployeeData.pop() // remove the last item
+EmployeeData.shift() // remove the first item
 console.log(EmployeeData) // [2, 4, 6, "Mitch"]
 EmployeeData.push("Benon") // add a new item
-EmployeeData.shift() // remove the first item
+
 
 // let, {var},  const
 // let mutatable
@@ -31,11 +32,16 @@ const entries = Object.entries(EmployeeDataObject) // [["name", "Mitch"], ["age"
 
 // loops map, foreEach, filter, for
 
+//v1
+for(let i = 0; i < EmployeeData.length; i++) {
+    console.log(EmployeeData[i])
+}
 
 //v2
 for(let i in EmployeeData) {
     console.log(EmployeeData[i])
 }
+
 // v3
 for(let t of EmployeeData) {    
     console.log(t)
