@@ -2,14 +2,16 @@ import express from 'express';
 import { Datafile } from './data/dataFile.js';
 import dotenv from 'dotenv'
 import { StudentData } from './data/students.js';
+import { taskRouter } from './taskService/index.js';
+import { studentRouter } from './studentService/index.js';
+import { employeeRouter } from './employeeService/index.js'
 
-// bodyParse
-
-import { taskRouter } from './taskService'
 dotenv.config()
+
 const env = process.env
 const app = express();
 const localDb = []
+
 app.use(express.json())
 // adding a method or endpoint requires the following:
 // endpoint(route) name : string
@@ -47,6 +49,7 @@ app.get("/students", (req, res) => {
 })
 */
 
+/*
 app.get("/provinceCount", (req, res) => {
     //const provinces = [];
     //StudentData.forEach((student) => {
@@ -72,6 +75,7 @@ app.get("/provinceCount", (req, res) => {
         res.status(500).json("Unable to count students by province: " + error.message)
     }
 });
+*/
 
 /*
 app.get('/opherlabsEmployee', (req, res) => {
@@ -104,6 +108,9 @@ console.log(env.API_PORT)
 // GET, POST, PUT, PATCH, DELETE : HTTP methods
 // use
 app.use(taskRouter)
+app.use(studentRouter)
+app.use(employeeRouter)
+
 
 /******************End of app initialization******************/
 app.listen(env.API_PORT ?? 6700, () => {

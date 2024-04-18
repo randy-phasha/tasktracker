@@ -40,7 +40,7 @@ Please make sure that you learn on how to work on these tasks without using AI. 
 
 Based on what wehave covered this week please work on the following
 
-1. Clean up teh main server file `index.js` to have all implementation in separate files
+1. Clean up the main server file `index.js` to have all implementation in separate files
 2. Create endpoint routes which are clean and with no `inline ` implementations but using external functions to group all functionalities
 3. Add the following endpoints to `taskService`
    a. Adding new tasks
