@@ -1,10 +1,10 @@
 export const EmployeeData = [2,4, 6, "Mitch", "Clynton", { name: "Clynton" }, [1, 2]] // length, pop, push, shift, map, filter
 const length = EmployeeData.length // 4
 // get the last item
-const latsInem = EmployeeData[length - 1] // "Clynton"
+const lastItem = EmployeeData[length - 1] // "Clynton"
 EmployeeData.pop() // remove the last item
 EmployeeData.shift() // remove the first item
-console.log(EmployeeData) // [2, 4, 6, "Mitch"]
+//console.log(EmployeeData) // [2, 4, 6, "Mitch"]
 EmployeeData.push("Benon") // add a new item
 
 
@@ -18,7 +18,7 @@ const mappedData = EmployeeData.map(student => {
     }
 })
 const fiteredData = EmployeeData.filter(student => typeof student === "number")
-console.log(mappedData) // ["Mitch", "Benon"]
+//console.log(mappedData) // ["Mitch", "Benon"]
 
 export const EmployeeDataObject = {
     name: "Mitch",
@@ -34,15 +34,15 @@ const entries = Object.entries(EmployeeDataObject) // [["name", "Mitch"], ["age"
 
 //v1
 for(let i = 0; i < EmployeeData.length; i++) {
-    console.log(EmployeeData[i])
+    //console.log(EmployeeData[i])
 }
 
 //v2
 for(let i in EmployeeData) {
-    console.log(EmployeeData[i])
+    //console.log(EmployeeData[i])
 }
 
 // v3
 for(let t of EmployeeData) {    
-    console.log(t)
+    //console.log(t)
 }

@@ -111,7 +111,6 @@ app.use(taskRouter)
 app.use(studentRouter)
 app.use(employeeRouter)
 
-
 /******************End of app initialization******************/
 app.listen(env.API_PORT ?? 6700, () => {
     console.log(`Server listening on port http://localhost:${env.API_PORT ?? 6700}`);
